@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafeteira AromaPro</title>
+<style>
+  body {
+    font-family: Georgia, serif;
+    background-color: #F9F6F0;
+    color: #2C1A14;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* Header com badge absoluta */
+  header {
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 1px solid #D3C4B1;
+    position: relative;
+  }
+
+  .badge-promo {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: #A0522D;
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+  }
+
+  /* Seções gerais */
+  section {
+    padding: 60px 0;
+    border-bottom: 1px solid #EAE0D5;
+    position: relative;
+  }
+
+  h2 {
+    margin-top: 0;
+    color: #4A2E2B;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #5C4033;
+    color: #fff;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #4A2E2B;
+  }
+
+  /* Limpar floats */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Seção 1: Imagem + Descrição (via float) */
+  .product-img {
+    float: left;
+    width: 400px;
+    height: 340px;
+    background-color: #D3C4B1;
+    text-align: center;
+    line-height: 340px;
+    font-style: italic;
+    color: #5C4033;
+    border-radius: 6px;
+    position: relative;
+    background-image: url("https://cdn.pixabay.com/photo/2020/09/13/14/24/coffee-5568374_1280.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-desc {
+    float: right;
+    width: 450px;
+    position: relative;
+  }
+
+  .product-desc ul {
+    padding-left: 20px;
+    line-height: 1.8;
+  }
+
+  /* Seção 2: Testemunhos (via inline-block) */
+  .testimonial-wrapper {
+    font-size: 0; /* remove espaços entre inline-blocks */
+    letter-spacing: 0;
+  }
+
+  .testimonial-card {
+    display: inline-block;
+    width: 280px;
+    font-size: 14px;
+    vertical-align: top;
+    background: #fff;
+    padding: 24px;
+    margin-right: 20px;
+    border: 1px solid #EAE0D5;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+  }
+
+  .testimonial-card:last-child {
+    margin-right: 0;
+  }
+
+  .quote-mark {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 36px;
+    color: #D3C4B1;
+  }
+
+  /* Seção 3 & 4: Formulários */
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  form input {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #D3C4B1;
+    background: #fff;
+    border-radius: 4px;
+    font-family: inherit;
+  }
+
+  /* Elemento fixo (botão flutuante) */
+  .floating-contact {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #A0522D;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 13px;
+    color: #5C4033;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <span class="badge-promo">Edição Limitada</span>
+    <h1>Cafeteira AromaPro</h1>
+    <p>O espresso perfeito extraído com precisão milimétrica</p>
+  </div>
+</header>
+
+<main class="container">
+  
+  <!-- Seção 1: Imagem + Descrição -->
+  <section class="clearfix">
+    <h2>O Segredo do Café Perfeito</h2>
+    <div class="product-img">
+    </div>
+    <div class="product-desc">
+      <h3>15 Bar de Pressão e Caldeira Dupla</h3>
+      <p>Desenvolvida para paladares exigentes. A AromaPro extraí óleos essenciais e aroma intenso sem amargor, transformando sua rotina matinal em um verdadeiro ritual de cafeteria.</p>
+      <ul>
+        <li>Vaporizador de leite microtexturizado</li>
+        <li>Aquecedor de xícaras superior emborrachado</li>
+        <li>Controle digital de temperatura PID</li>
+      </ul>
+      <a href="#comprar" class="btn" style="margin-top: 10px;">Garantir a Sua</a>
+    </div>
+  </section>
+
+  <!-- Seção 2: Testemunhos -->
+  <section>
+    <h2>O que dizem os baristas amadores</h2>
+    <div class="testimonial-wrapper">
+      <div class="testimonial-card">
+        <span class="quote-mark">“</span>
+        <p>A crema sai espessa e consistente em toda extração. Melhor investimento do ano.</p>
+        <p style="margin-bottom:0;"><strong>— Helena Martins</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <span class="quote-mark">“</span>
+        <p>O vaporizador deixa o leite perfeito para latte art na primeira tentativa.</p>
+        <p style="margin-bottom:0;"><strong>— Rafael Costa</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <span class="quote-mark">“</span>
+        <p>Acabamento impecável em aço inox e muito fácil de fazer a descalcificação.</p>
+        <p style="margin-bottom:0;"><strong>— Júlia Mendes</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 3: Newsletter -->
+  <section>
+    <h2>Clube do Grão</h2>
+    <p>Cadastre-se para receber guias de extração e 10% off no primeiro refil.</p>
+    <form onsubmit="event.preventDefault(); alert('Inscrito com sucesso!');">
+      <div class="form-group"><input type="text" placeholder="Seu nome" required></div>
+      <div class="form-group"><input type="email" placeholder="Seu melhor e-mail" required></div>
+      <button type="submit" class="btn">Quero o desconto</button>
+    </form>
+  </section>
+
+  <!-- Seção 4: Formulário de Compra -->
+  <section id="comprar">
+    <h2>Finalize seu Pedido</h2>
+    <p>Frete grátis para todo o Brasil + Kit com 250g de Grão Especial de brinde.</p>
+    <form onsubmit="event.preventDefault(); alert('Redirecionando para o pagamento...');">
+      <div class="form-group"><input type="text" placeholder="Nome completo" required></div>
+      <div class="form-group"><input type="text" placeholder="CPF" required></div>
+      <div class="form-group"><input type="text" placeholder="Endereço de entrega (Rua, Número, Bairro)" required></div>
+      <div class="form-group"><input type="text" placeholder="CEP" required></div>
+      <button type="submit" class="btn" style="background-color: #A0522D;">Comprar Agora — R$ 899,00</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 AromaPro Brasil. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Botão flutuante de contato usando position: fixed -->
+<a href="#comprar" class="floating-contact" title="Dúvidas? Fale conosco">💬</a>
+
+</body>
+</html>
